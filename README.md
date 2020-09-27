@@ -4,8 +4,6 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/chitranu/textlocal-laravel-notification-channel/master.svg?style=flat-square)](https://travis-ci.org/chitranu/textlocal-laravel-notification-channel)
 [![StyleCI](https://styleci.io/repos/65772445/shield)](https://styleci.io/repos/65772445)
-[![Quality Score](https://img.shields.io/scrutinizer/g/chitranu/textlocal-laravel-notification-channel.svg?style=flat-square)](https://scrutinizer-ci.com/g/chitranu/textlocal-laravel-notification-channel)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/chitranu/textlocal-laravel-notification-channel/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/chitranu/textlocal-laravel-notification-channel/?branch=master)
 [![Total Downloads](https://img.shields.io/packagist/dt/chitranu/textlocal-laravel-notification-channel.svg?style=flat-square)](https://packagist.org/packages/chitranu/textlocal-laravel-notification-channel)
 
 This package makes it easy to send notifications using [Textlocal](https://textlocal.in/) with Laravel framework.
