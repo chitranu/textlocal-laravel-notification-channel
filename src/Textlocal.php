@@ -130,15 +130,15 @@ class Textlocal
     }
 
     /**
-     * @param string $destination Phone number as described by the E.164 format.
+     * Send sms
      *
-     * @throws AwsException
-     *
-     * @return \Aws\Result
+     * @param string $message
+     * @param string $destination
+     * @return array|mixed
      */
-    public function send(TextlocalMessage $message, $destination)
+    public function send($message, $number)
     {
-        return $this->sendSms([$destination], $message->getBody(), $this->sender);
+        return $this->sendSms([$number], $message, $this->sender);
     }
 
     /**

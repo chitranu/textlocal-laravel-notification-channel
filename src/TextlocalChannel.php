@@ -34,12 +34,12 @@ class TextlocalChannel
             $destination = $this->getDestination($notifiable, $notification);
             $message = $this->getMessage($notifiable, $notification);
 
-            return $this->textlocal->send($message, $destination);
+            return $this->textlocal->send($message->getBody(), $destination);
         } catch (\Exception $e) {
             $event = new NotificationFailed(
                 $notifiable,
                 $notification,
-                'sns',
+                'Textlocal',
                 ['message' => $e->getMessage(), 'exception' => $e]
             );
             $this->events->dispatch($event);
