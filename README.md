@@ -95,10 +95,6 @@ class SomeModel {
 }
 ```
 
-### Available Message methods
-
-A list of all available options
-
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
