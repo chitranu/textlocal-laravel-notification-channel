@@ -71,24 +71,8 @@ class AccountApproved extends Notification
 
     public function toSms($notifiable)
     {
-        // You can just return a plain string:
-        return "Your {$notifiable->service} account was approved!";
-
         // OR explicitly return a TextlocalMessage object passing the message body:
         return new TextlocalMessage("Your {$notifiable->service} account was approved!");
-
-        // OR return a TextlocalMessage passing the arguments via `create()` or `__construct()`:
-        return TextlocalMessage::create([
-            'body' => "Your {$notifiable->service} account was approved!",
-            'transactional' => true,
-            'sender' => 'MyBusiness',
-        ]);
-
-        // OR create the object with or without arguments and then use the fluent API:
-        return TextlocalMessage::create()
-            ->body("Your {$notifiable->service} account was approved!")
-            ->promotional()
-            ->sender('MyBusiness');
     }
 }
 ```
