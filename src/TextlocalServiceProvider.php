@@ -11,24 +11,14 @@ class TextlocalServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Bootstrap code here.
-
-        /**
-         * Here's some example code we use for the pusher package.
-
-        $this->app->when(Channel::class)
-            ->needs(Pusher::class)
+        $this->app->when(TextlocalChannel::class)
+            ->needs(Textlocal::class)
             ->give(function () {
-                $pusherConfig = config('broadcasting.connections.pusher');
-
-                return new Pusher(
-                    $pusherConfig['key'],
-                    $pusherConfig['secret'],
-                    $pusherConfig['app_id']
+                return new Textlocal(
+                    $this->app['config']['services.textlocal.key'],
+                    $this->app['config']['services.textlocal.sender']
                 );
             });
-         */
-
     }
 
     /**
