@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/chitranu/textlocal-laravel-notification-channel.svg?style=flat-square)](https://packagist.org/packages/chitranu/textlocal-laravel-notification-channel)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/chitranu/textlocal-laravel-notification-channel/master.svg?style=flat-square)](https://travis-ci.org/chitranu/textlocal-laravel-notification-channel)
 [![StyleCI](https://styleci.io/repos/65772445/shield)](https://styleci.io/repos/65772445)
 [![Total Downloads](https://img.shields.io/packagist/dt/chitranu/textlocal-laravel-notification-channel.svg?style=flat-square)](https://packagist.org/packages/chitranu/textlocal-laravel-notification-channel)
 
