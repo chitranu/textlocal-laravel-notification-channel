@@ -1,0 +1,47 @@
+{
+    "name": "laravel-notification-channels/textlocal",
+    "description": "Textlocal SMS Notification channel for Laravel",
+    "homepage": "https://github.com/laravel-notification-channels/textlocal",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Swapnil Bhavsar",
+            "email": "hey@swapnil.dev",
+            "homepage": "https://swapnil.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/notifications": "~5.5 || ~6.0 || ~7.0 || ~8.0",
+        "illuminate/support": "~5.5 || ~6.0 || ~7.0 || ~8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Textlocal\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Textlocal\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Textlocal\\TextlocalServiceProvider"
+            ]
+        }
+    }
+}
